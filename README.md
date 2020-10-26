@@ -3,7 +3,9 @@ Documentation of my progress on learning HTML.
 I learned html at https://www.codecademy.com/learn/learn-html
 Important notes:
 1. Opening and closing tags. HTML has tags that help structure and format the coding of the website to make it easier to read and understand. Displayed content is placed within a tag. An example of an opening tag is <p> and a closing tag is </p>.
+```
 <p>Hello World</p>
+```
 2. The body tags, <body> and </body> are used to construct the body of a website. You are able to place other tags within the body tag like so:
 <body>
   <p>"Life is very short and what we have to do must be done in the now." - Audre Lorde</p>
