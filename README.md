@@ -2,7 +2,7 @@
 Documentation of my progress on learning HTML.
 I learned html at https://www.codecademy.com/learn/learn-html
 Important notes:
-1. Opening and closing tags. HTML has tags that help structure and format the coding of the website to make it easier to read and understand. Displayed content is placed within a tag. An example of an opening tag is <p> and a closing tag is </p>.
+1. Opening and closing tags. HTML has tags that help structure and format the coding of the website to make it easier to read and understand. Displayed content is placed within a tag. An example of an opening tag is `<p>` and a closing tag is `</p>`.
 ```
 <p>Hello World</p>
 ```
