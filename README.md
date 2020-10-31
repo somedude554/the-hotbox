@@ -94,4 +94,28 @@ Important notes:
   Video not supported
 </video>
 ```
+13. Many of the html elements can call script that executes code that can also modify any of the CSS or html elements.
+```
+<select name="themetoggle" id="themeSwitch" onchange="toggleTheme()">
+```
   
+I also learned some CSS at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+Important Notes:
+1. Classes are created with the ".". Example: ".light-mode" denotes the light-mode class.
+2. There are many options to customize the class: color, background color, margin, width, height, and display. Usage:
+```
+.someclass {
+  color: white;
+  background-color: brown;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+```
+3. Custom variables are allowed and are denoted by "--".
+```
+.someclass{
+  --secondary-color: 
+}
+```
