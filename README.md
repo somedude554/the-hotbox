@@ -94,9 +94,20 @@ Important notes:
   Video not supported
 </video>
 ```
-13. Many of the html elements can call script that executes code that can also modify any of the CSS or html elements.
+13. Many of the html elements can call script that executes code that can also modify any of the CSS or html elements. Example from http://www.simplehtmlguide.com/javascript.php
 ```
-<select name="themetoggle" id="themeSwitch" onchange="toggleTheme()">
+<html>
+ <head>
+  <script type="text/javascript">
+function functionOne() { alert('You clicked the top text'); }
+function functionTwo() { alert('You clicked the bottom text'); }
+  </script>
+ </head>
+<body>
+ <p><a href="#" onClick="functionOne();">Top Text</a></p>
+ <p><a href="javascript:functionTwo();">Bottom Text</a></p>
+ </body>
+</html>
 ```
   
 I also learned some CSS at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
