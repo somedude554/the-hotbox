@@ -139,6 +139,7 @@ https://www.w3schools.com/cssref/sel_nth-child.asp
 ```
 
 I refreshed my JavaScript knowledge at https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+JavaScript is incredibly useful in frontend development, since it allows for a user to dynamically change both the html or css directly from the code.
 Since the syntax and usage of JavaScript is similar to Java and other object-oriented programming languages, most of the knowledge was easily applicable since I have experience with Java, C++, and python.
 1. Initialize variables with the "var" keyword. These can also be modified later. Also end all lines with a semicolon.
 ```
@@ -147,3 +148,42 @@ myVariable = 5;
 ```
 2. The data types in JS are similar to Java: strings, numbers, booleans, arrays, and objects.
 3. Multi-line comments are denoted using ``` /* ``` and ```*/``` and single line comments are denoted using ```//```.
+4. Operators in JS are essentially the same as other languages: addition, subtraction, multiplication, division, assignment, equality, not, does not equal.
+5. Functions are denoted with the "function" keyword. Parameters are specified by the programmer.
+```
+function multiply(num1,num2){
+  return num1*num2;
+}
+```
+6. JS functions can dynamically change the elements' attributes of the html and the css. Refer the the example below which is a snippet of the toggleTheme function in the main repository that I wrote.
+```
+function toggleTheme(){
+  var element = document.body;
+  var themeID = document.getElementById("themeSwitch").value;
+  if(themeID == 1){
+    document.documentElement.className="light-mode";
+    document.getElementsByTagName("h1")[0].style.color = "black";
+    document.getElementsByTagName("footer")[0].style.color = "black";
+  }
+}
+```
+The function ``` toggleTheme() ``` is being defined.
+``` var element = document.body;``` sets the local variable "element" as the document body.
+``` var themeID = document.getElementById("themeSwitch").value;``` sets the local variable "themeID" as the value of the "themeSwitch" element within the HTML.
+The if statement checks if themeID is equivalent to 1 and if it is, it changes the CSS class to "light-mode", the 0th element of header to black, and the 0th element of footer to black.
+7. JS functions can also take in outside data and modify the HTML/CSS accordingly. Snippet of code taken from the main HotBox repository.
+References from https://www.w3schools.com/js/js_date_methods.asp
+```
+function checkDate(){
+  var date = new Date();
+  var month = date.getMonth()+1;
+  if(month == 10){
+    document.getElementById("themeSwitch").value=3;
+  }
+  toggleTheme();
+}
+```
+The function ``` checkDate() ``` is being defined. This function checks the date and sets the theme according to the month.
+``` var date = new Date();``` creates a new Date object as the "date" variable. ``` new Date()``` is a built in function in JS that takes the current date.
+``` var month = date.getMonth()+1;``` sets the month as the current numberical month, e.g. October being 10. The ```.getMonth()``` method takes the current month and adds by 1 since January starts at 0. 
+The if statement checks if the month is 10, or October, and if it is it changes the "themeSwitch" HTML element to 3, which refers to the Halloween Theme, and then terminates the loop. "toggleTheme()" function is then called that dynamically changes the theme of the website.
