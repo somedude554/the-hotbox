@@ -130,3 +130,20 @@ Important Notes:
   --secondary-color: 
 }
 ```
+4. Customization of attribute for every <p> element of a parent. For the example below, it takes every odd element of row and changes the color to the specified second color.
+https://www.w3schools.com/cssref/sel_nth-child.asp
+```
+.row:nth-child(odd){
+  color:var(--secondary-color);
+}
+```
+
+I refreshed my JavaScript knowledge at https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+Since the syntax and usage of JavaScript is similar to Java and other object-oriented programming languages, most of the knowledge was easily applicable since I have experience with Java, C++, and python.
+1. Initialize variables with the "var" keyword. These can also be modified later. Also end all lines with a semicolon.
+```
+var myVariable;
+myVariable = 5;
+```
+2. The data types in JS are similar to Java: strings, numbers, booleans, arrays, and objects.
+3. Multi-line comments are denoted using ``` /* ``` and ```*/``` and single line comments are denoted using ```//```.
